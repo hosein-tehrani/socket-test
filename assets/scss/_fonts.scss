@@ -1,0 +1,122 @@
+// Add Fonts
+@font-face {
+  font-family: iransansStatic;
+  src: url('https://assets.medcome.ir/fonts/iransansx/staticfonts/IRANSansX-Regular.woff')
+    format('woff');
+}
+@font-face {
+  font-family: iransansStatic;
+  src: url('https://assets.medcome.ir/fonts/iransansx/staticfonts/IRANSansX-bold.woff')
+    format('woff');
+}
+@font-face {
+  font-family: iransansStatic;
+  src: url('https://assets.medcome.ir/fonts/iransansx/staticfonts/IRANSansX-black.woff')
+    format('woff');
+}
+@font-face {
+  font-family: iransansxv;
+  src: url('https://assets.medcome.ir/fonts/iransansx/IRANSansXV.woff')
+    format('woff');
+  font-weight: 100 900;
+}
+@font-face {
+  font-family: iransansxv;
+  src: url('https://assets.medcome.ir/fonts/iransansx/IRANSansXV.woff2')
+      format('woff-variations'),
+    format('woff');
+  font-weight: 100 900;
+  font-display: fallback;
+}
+body {
+  font-family: 'iransansxv', iransansStatic, tahoma;
+  direction: rtl;
+  font-variation-settings: 'DOTS' 8;
+  background-color: #f9f9f9 !important;
+  -moz-font-feature-settings: 'ss03';
+  -webkit-font-feature-settings: 'ss03';
+  font-feature-settings: 'ss03';
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #5f6368;
+}
+h1 {
+  font-variation-settings: 'wght' 900, 'DOTS' 7;
+  font-size: 55px;
+}
+h2 {
+  font-size: 24px;
+}
+h3 {
+  font-size: 18px;
+}
+h4 {
+  font-size: 16px;
+}
+h5 {
+  font-size: 14.4px;
+}
+@media (max-width: 921px) {
+  h1 {
+    font-size: 28px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  h4 {
+    font-size: 14px;
+  }
+  h5 {
+    font-size: 14.4px;
+  }
+}
+@supports (font-variation-settings: normal) {
+  body {
+    font-family: 'iransansxv', tahoma;
+  }
+  * {
+    font-family: 'iransansxv', iransansStatic, tahoma;
+  }
+}
+.vf-wght {
+  font-variation-settings: 'wght' 700;
+}
+.vf-shar {
+  font-variation-settings: 'wght' 900, 'DOTS' 4;
+}
+.ss02 {
+  -moz-font-feature-settings: 'ss02';
+  -webkit-font-feature-settings: 'ss02';
+  font-feature-settings: 'ss02';
+}
+.ss03 {
+  -moz-font-feature-settings: 'ss03';
+  -webkit-font-feature-settings: 'ss03';
+  font-feature-settings: 'ss03';
+}
+.ss04 {
+  -moz-font-feature-settings: 'ss04';
+  -webkit-font-feature-settings: 'ss04';
+  font-feature-settings: 'ss04';
+}
+.v-expansion-panel__shadow {
+  box-shadow: none !important;
+}
+.v-expansion-panel-title {
+  font-weight: 700;
+}
+.mdi-circle::before {
+  color: #ff2056 !important;
+}
